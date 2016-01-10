@@ -1,0 +1,24 @@
+.animated.fadeIn
+  h1 Designs
+  .row
+    .col-sm-8.col-sm-offset-2.images
+      .col-sm-4
+        = link_to "images/code-jam.png", data: { lightbox: "test", title: "caption" }
+          = image_tag "code-jam.png"
+        = link_to "images/html_css.png", data: { lightbox: "test", title: "caption" }
+          = image_tag "html_css.png"
+        = link_to "images/front-end.png", data: { lightbox: "test", title: "caption" }  
+          = image_tag "front-end.png"
+      .col-sm-4
+        = link_to "images/finch.png", data: { lightbox: "test", title: "caption" } 
+          = image_tag "finch.png"
+        = link_to "images/idea-bakery.png", data: { lightbox: "test", title: "caption" } 
+          = image_tag "idea-bakery.png"
+      .col-sm-4
+        = link_to "images/ROR2.png", data: { lightbox: "test", title: "caption" } 
+          = image_tag "ROR2.png"
+        = link_to "images/git.png", data: { lightbox: "test", title: "caption" } 
+          = image_tag "git.png"
+
+= javascript_include_tag :lightbox_plus_jquery
+        

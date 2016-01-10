@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import "normalize";
+
+
+html {
+  height: 100%;
+  font-size: 16px; 
+}
+
+body {
+  background: white;
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+hr {
+  border-style: solid;
+  border-color: white;
+}
+
+.nav {
+  align-self: flex-start;
+  margin-left: auto;
+  max-height: 60px;
+  min-height: 60px;
+  display: flex;
+  flex: auto;
+  align-items: center;
+  padding-right: 15px;
+
+  a {
+    padding: 0 15px;
+  }
+}
+
+
+.content {
+  display: flex;
+  flex: auto;
+  -webkit-align-items: center;
+  justify-content: center;
+}
+
+.description {
+  display: inline-block;
+  width: 50%;
+}
+
+h1 {
+  color: rgba(0,0,0,0.5);
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.intro {
+  flex: 1 1 auto;
+}
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+}
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}

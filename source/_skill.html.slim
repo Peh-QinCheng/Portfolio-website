@@ -1,0 +1,8 @@
+.row.skill
+  .skill-name
+    p = skill
+  .skill-lvl  
+    -lvl.times do |i|  
+      i.fa.fa-star
+    -(5-lvl).times do |i|
+      i.fa.fa-star-o
