@@ -37,6 +37,7 @@ end
 
 # Build-specific configuration
 configure :build do
+  set :http_prefix, '/Portfolio-website'
   # Minify CSS on build
   # activate :minify_css
 
